@@ -6,7 +6,7 @@ def category_show(request, category_slug):
     context = {}
     context['category'] = get_object_or_404(Category, slug=category_slug)
     
-    context['categories'] = Category.objects.filter(status=STATUS).order_by('title')
+    # context['categories'] = Category.objects.filter(status=STATUS).order_by('title')
     context['items'] = Product.objects.filter(
         category=context['category'],
         status=STATUS,

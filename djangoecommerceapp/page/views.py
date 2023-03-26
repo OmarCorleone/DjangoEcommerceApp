@@ -18,9 +18,9 @@ def index(request):
     
     context={
         "images":images,
-        'categories':Category.objects.filter(
-        status=STATUS
-        ).order_by('title'),
+        # 'categories':Category.objects.filter(
+        # status=STATUS
+        # ).order_by('title'),
     }
 
     return render(request,"home/index.html",context)

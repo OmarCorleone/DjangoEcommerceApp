@@ -24,18 +24,7 @@
                     
                 </div>
             </li>
-            {% if categories %}
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Kategorilerim
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      {% for category in categories %}
-        <a class="dropdown-item" href="{% url 'category_show' category.slug %}">{{ category.title }}</a>
-      {% endfor %}
-    </div>
-  </li>
-{% endif %}
+            
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="" aria-expanded="">
